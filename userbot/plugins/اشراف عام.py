@@ -1,4 +1,4 @@
-#    جميع الحقوق محفوظة كتابة وتعديل  :   @RR7PP
+#   جميع الحقوق محفوظة كتابة وتعديل  :   @DDDD0DD
 #    اخمط مع ذكر الحقوق غيرها انت مطور فاشل
 from telethon.tl.functions.channels import EditAdminRequest
 from telethon.tl.types import ChatAdminRights, MessageEntityMentionName
@@ -21,7 +21,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("▾∮ لا يمكنك بدون ايدي المستخدم")
+            await event.edit("▾∮  لا يمكنك بدون ايدي المستخدم")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -32,7 +32,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("▾∮ هنالك خطأ يرجى تبليغنا @JMTHON", str(err))
+            return await event.edit("▾∮ هنالك خطأ يرجى تبليغنا @DDDD0DD", str(err))
     return user_obj, extra
 
 
