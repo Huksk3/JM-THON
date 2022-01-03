@@ -8,7 +8,7 @@
 from userbot import *
 from userbot import jmthon
 
-@jmthon.on(admin_cmd(pattern="(جلب الصورة|احا)"))
+@jmthon.on(admin_cmd(pattern="(جلب الصورة|واو)"))
 async def dato(event):
     if not event.is_reply:
         return await event.edit("..")
@@ -19,8 +19,8 @@ async def dato(event):
         pic,
         caption=f"""
 -تـم جـلب الصـورة بنجـاح ✅
-- CH: @Jmthon
-- Dev: @RR9R7
+- CH: @C7CCQ
+- Dev: @DDDD0DD
   """,
     )
-    await event.edit("احاا")
+    await event.edit("واو")
